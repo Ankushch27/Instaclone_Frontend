@@ -1,38 +1,70 @@
-.App {
-  text-align: center;
-}
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.brand-logo {
+  font-family: 'Grand Hotel', cursive;
+  font-size: 1.8rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  margin: 0 auto;
+  padding: 0 0.75rem;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
+  border-bottom: 1px solid #dbdbdb;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+}
+
+.navbar > .container {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links {
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-item {
+  padding: 0 1rem;
+}
+
+.home {
+  background-color: #fafafa;
+}
+/* Posts */
+.posts {
+  margin: 0 auto;
+  max-width: 600px;
+  padding-top: 30px;
+}
+.post-card {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 60px;
+}
+.post-author {
+  align-items: center;
+  display: flex;
+  padding: 1rem;
+}
+.post-author img {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+.post-content {
+  padding: 1rem;
+}
+.post-comment-input {
+  display: flex;
+}
+
+/* Create post */
+.create-post {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  margin-bottom: 30px;
+  padding: 1rem;
 }
